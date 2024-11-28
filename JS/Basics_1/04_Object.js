@@ -37,7 +37,7 @@ const users = [
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "hi@gmail.com"
     },
     {
         id: 1,
@@ -45,7 +45,8 @@ const users = [
     },
 ]
 
-users[1].email
+console.log(users[1].email);
+(users[1].email)
 // console.log(tinderUser);
 
 // console.log(Object.keys(tinderUser)); //return array of keys
@@ -60,6 +61,9 @@ const course = {
     price: "999",
     courseInstructor: "hitesh"
 }
+
+// console.log(course[1]); //undefined
+
 
 // course.courseInstructor
 
