@@ -35,3 +35,15 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
+
+
+function rest(val1, val2, ...val3){ //REST opertator
+
+    console.log(val3);
+    
+
+}
+
+rest(1,2,3,4,5) //val1 = 1, val2= 2, val3 = [3,4,5]
+
+
