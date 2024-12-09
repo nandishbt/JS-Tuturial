@@ -4,7 +4,7 @@
     //named iife
     console.log("DB Connected");
     
-})(); //semicolon very important to stop iife and to write nect iife
+})(); //semicolon very important to stop iife and to write next iife
 
 
 (
