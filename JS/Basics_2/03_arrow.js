@@ -59,7 +59,7 @@ abcd()
 //this keyword in es5 function will referred to its current object or context where it lies 
 
 //this keyword in es6 function will referred to value of this keyword in its outer function if there is no outer function 
-//it gives empty object
+//it gives empty object in  nodejs  env
 
 
 //+++++++++++++++++++++++++++++++++++++++++Arrow functions +++++++++++++++++++++++++++++++++++++++++++++++++

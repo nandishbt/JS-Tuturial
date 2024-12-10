@@ -32,6 +32,8 @@ let result = add(val1,val2)
 
 Executing above code
 
+global execution context ->
+
 memory allocation phase ->
 
 val1 = undefined
