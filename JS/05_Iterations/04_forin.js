@@ -31,4 +31,4 @@ for (const index in str) {
 
 
 
-// for in loop used to print keys/ indices only not values , It is applied to map
+// for in loop used to print keys/ indices only not values , It is not applied to map
