@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="week">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    
+</body>
+<script>
+    const parent = document.querySelector('.week')
+    // console.log(parent);
+
+    // console.log(parent.children); //gives html collection having all children
+
+    // console.log(parent.children[1].textContent); //Tuesday
+
+    
+    
+    for (let index = 0; index < parent.children.length; index++) {
+        // console.log(parent.children[index]);
+        parent.children[index].style.color = 'red'
+          
+    }
+
+    // console.log(parent.firstElementChild.textContent); //monday
+    // console.log(parent.lastElementChild.textContent); //Thursday
+    
+
+    const monday = parent.children[0]
+
+    console.log(monday.parentElement); //gives parent element
+
+    console.log(monday.nextElementSibling.textContent); //Tuesday
+
+    console.log(parent.childNodes); //Nodelist of 9 elems because it counts linebreak and elemnt 
+    
+    
+    
+
+
+    
+
+</script>
+</html>

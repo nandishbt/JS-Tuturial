@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.id = Math.floor(Math.random() * 10 + 1)
+    div.className = "Mydiv"
+    div.setAttribute('title','nandish')
+    div.style.backgroundColor = 'black'
+    div.style.color = 'white'
+    div.style.padding = '50px'
+
+    // div.textContent = "My name is nandish"
+
+    const text = document.createTextNode('My name is nandish') //more effecient than above one
+
+    div.appendChild(text)
+
+    document.body.appendChild(div)
+
+
+
+
+    
+
+
+   
+</script>
+</html>

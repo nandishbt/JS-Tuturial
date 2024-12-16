@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="main" id="heading">Welcome to DOM Classes</h1>
+    <p class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, magni.</p>
+
+    <ul>
+        <li class = 'list-item'>One</li>
+        <li class = 'list-item'>two</li>
+        <li class = 'list-item'>Three</li>
+        <li class = 'list-item'>Four</li>
+        <li class = 'list-item'>Five</li>
+    </ul> 
+
+    <input type="text">
+
+    <script>
+
+        const title = document.getElementById('heading')
+
+        title.getAttribute('id') //heading
+        title.setAttribute('class','Title') //set class name to Title
+
+        title.innerHTML = '<i> my dom class</i>' // to change inner html thing
+
+        title.textContent = "Welcome to DOM Classes" // gives all the text content i html doc
+
+        title.innerText = "Welcome All to DOM Classes" // to change whatever is visible in browser
+
+
+
+
+
+        // Node List->list containg all the elems 
+        const MyUlList = document.querySelectorAll('li') // gives nodelist containg all the li tags
+
+        // console.log(MyUlList);
+        
+        MyUlList[0].style.color = 'red'
+
+        MyUlList.forEach((li)=>{ 
+            li.style.color = 'red'
+        })
+
+
+
+
+
+
+        //HTML Collection -> list containg all html elems 
+        myList = document.getElementsByClassName('list-item') //gives html collection containg all the elements of list-item class
+        //we cant loop over(map,reduce,foreach,filter) this so we have to convert it to array
+
+        const arr = Array.from(myList)
+
+        arr.map((li)=>{
+            li.style.color = 'blue'
+        })
+        
+        
+        
+
+
+
+
+        const inp = document.querySelector('input[type = text]')
+
+        inp.style.backgroundColor = 'green'
+
+
+
+
+    </script>
+    
+</body>
+</html>
