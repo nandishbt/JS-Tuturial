@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+
+    //create li tag
+
+    function addList(lang){
+       const li =  document.createElement('li')
+    //    li.innerHTML = lang
+       li.appendChild(document.createTextNode(lang))
+       document.querySelector('ul').appendChild(li)
+    }
+
+    addList("Java")
+    addList("Python")
+    addList("Typescript")
+
+
+    //edit 
+
+    const java = document.querySelector('li:nth-child(2)')
+
+    // java.innerHTML = 'c++'
+
+    const c = document.createElement('li')
+    c.textContent = 'C'
+
+    java.replaceWith(c)
+
+
+    //delete
+
+    const Ts = document.querySelector('li:last-child')
+
+    
+
+    // Ts.remove()
+
+
+
+
+
+
+
+
+</script>
+</html>
