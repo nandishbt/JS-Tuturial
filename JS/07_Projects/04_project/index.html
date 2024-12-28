@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="main">
+
+    <h1>Guess the number between 1 to 100</h1>
+
+    <form>
+        <input id="inp" type="number" style="padding: 10px 20px; font-size: large;"><br>
+        <input id="but" type="submit" style="padding: 8px 16px; margin-top: 15px;" >
+    </form>
+
+    <div class="paras">
+        <p id="mes"> </p>
+        <p>Previous Guesses <span id="pre"></span></p>
+        <p>Guesses remaining <span id="rem"> 10 </span></p>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

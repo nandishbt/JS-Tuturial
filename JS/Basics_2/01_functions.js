@@ -37,7 +37,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function rest(val1, val2, ...val3){ //REST opertator
+function rest(val1, val2, ...val3){ //REST opertator is always placed in last
 
     console.log(val3);
     

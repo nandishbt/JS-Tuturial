@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width: 100%; height: 100vh; padding: 5%;">
+
+    <h2>
+        start to change bg color for every one second
+    </h2>
+
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+
+    
+</body>
+
+<script>
+
+    const genRandomColor = function(){
+        let hex = "0123456789ABCDEF"
+
+        let color = '#'
+
+        for(var i = 0;i<6;i++){
+            color+=hex[Math.floor(Math.random() * 16)]
+        }
+
+        return color;
+    }
+
+    let interval
+    const startColor = () =>{
+
+        if(!interval){
+            interval = setInterval(()=>{
+            document.body.style.backgroundColor = genRandomColor()
+        },1000)
+        }
+
+       
+    }
+
+    const stopColor = ()=>{
+        clearInterval(interval)
+
+        interval = null
+    }
+
+
+
+    document.querySelector('#start').addEventListener('click',startColor)
+    document.querySelector('#stop').addEventListener('click',stopColor)
+
+</script>
+</html>
