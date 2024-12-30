@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+        <h1></h1>
+    </div>
+    
+</body>
+
+<script>
+
+    const url = 'https://randomuser.me/api/'
+
+    const xhr = new XMLHttpRequest()
+
+    xhr.open('GET',url)
+
+    xhr.send()
+
+    xhr.onreadystatechange = function(){
+        console.log(this.readyState);
+
+        if(this.readyState == 4){
+            let data = this.responseText
+            data = JSON.parse(data)
+            console.log(typeof data);
+            console.log(data.results[0].name);
+            document.querySelector('h1').innerHTML = data.results[0].name.first
+            
+        }
+        
+        
+    }
+   
+
+
+
+</script>
+</html>
