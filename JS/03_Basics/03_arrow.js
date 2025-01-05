@@ -74,7 +74,12 @@ const arrow2 = (n1,n2) => n1+n2 //with implicit return
 
 const arrow3 =()=>({username:"nandish"}) //to return object
 
+//value of this keyword in browser
 
+//global --> window object
+//inside function(both es5 and es6) --> window object
+//indide es5 method --> current object
+//inside es6 method --> window object
 
 
 
