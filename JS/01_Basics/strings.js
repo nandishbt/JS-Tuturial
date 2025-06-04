@@ -25,10 +25,10 @@ const gameName = new String('hitesh-hc-com')
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
-const newString = gameName.substring(0, 4)
+const newString = gameName.substring(0, 4) // does not support negative numbers & endIndex not included
 console.log(newString);
 
-const anotherString = gameName.slice(2, 4)
+const anotherString = gameName.slice(2, 4) // does  support negative numbers & endIndex not included
 console.log(anotherString);
 
 const newStringOne = "   hitesh    "
