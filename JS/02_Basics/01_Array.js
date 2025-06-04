@@ -14,7 +14,7 @@ arr.unshift(1) //add elem to start of array
 
 console.log(arr.slice(1,3)) //return portion of the array from index 1 to index 3 where index 3 not included
 
-arr.splice(1,3) //removes elems from index 1 to index 3 where index 3 is included
+arr.splice(1,3) //removes  3 elems from index 1 
 console.log(arr);
 
 
