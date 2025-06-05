@@ -1,5 +1,5 @@
 // console.log("2" > 1); //true
-// console.log("2" > "1"); //true
+// console.log("10" > "2"); //false only first chars are comapred
 
 console.log(null>0); //false i.e, null = 0
 console.log(null == 0); //false, null is not converted
