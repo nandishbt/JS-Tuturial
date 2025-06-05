@@ -50,6 +50,9 @@ console.log("2" - 1); //1
 // console.log(+true); //1
 // console.log(+""); //0
 
+console.log( 1 + true) // 2 true->1 false->0
+console.log(1 - false) // 1
+
 
 let bb = 45
 let cc = bb++; //this is assign value first and increment next
